@@ -1,0 +1,6 @@
+.entities/
+.objects/
+.settings/
+.tmh/
+.local/
+.project/
