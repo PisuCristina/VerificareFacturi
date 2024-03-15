@@ -1,0 +1,186 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "dtOutputReportTemplate&StateMachine_1",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ApplicationLayer/pdf/pdf_Read.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "image&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_pdfPath",
+        "out_pdfText"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DataLayer/ValidateData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_transactionItem",
+        "in_drPdfExtractedData",
+        "io_observatii"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DataLayer/CheckSignature.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_transactionNumber",
+        "in_observatii",
+        "in_dtPdfExtractedData",
+        "in_pdfText"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ApplicationLayer/Python/Python_VerifySignature.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isHandwrittenText&Sequence_1",
+        "script&Sequence_2",
+        "result&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_imagePath",
+        "in_pdfPath",
+        "in_pythonScriptPath",
+        "in_pythonMethod",
+        "in_observatii",
+        "in_dtPdfExtractedData",
+        "in_transactionNumber"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "pdfText&Sequence_1",
+        "observatii&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "in_transactionNumber",
+        "io_dtPdfData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ApplicationLayer/GoogleDrive/GoogleDrive_GetInputPDF.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "result&Sequence_3",
+        "fileLink&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_dtPdfData",
+        "BE1",
+        "in_query",
+        "in_pdfPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DataLayer/ExtractDataFromPdfText.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sumaTotala&Sequence_1",
+        "numeClient&Sequence_1",
+        "numarFactura&Sequence_1",
+        "data&Sequence_1",
+        "coduri&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_pdfText",
+        "in_rowNumber",
+        "io_dtPdfData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/TestCase_Python_VerifySignature.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/TestCase_pdf_Read.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "pdfPath&Sequence_1",
+        "pdfText&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/TestCase_O365_GetMailMessages.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "mailMessages&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "mailMessages&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "out_dtTransactionData",
+        "out_dtOutputReportTemplate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
